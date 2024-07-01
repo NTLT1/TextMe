@@ -22,7 +22,7 @@ static void connectToDataBaseOfUsers()
         }
     }
 
-    const QString fileName = "D:/Qt Projects/TextMe/database.sqlite3";
+    const QString fileName = "database.sqlite3";
     database.setDatabaseName(fileName);
     if (!database.open()) {
         qFatal("Cannot open database: %s", qPrintable(database.lastError().text()));
